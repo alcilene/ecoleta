@@ -66,6 +66,8 @@ function getCities(event) {
 
           const itemId = itemLi.dataset.id
 
+          console.log('ITEM ID: ', itemId)
+
           // verificar se existem itens selecionados, se sim
           // pegar os ítens selecionados
 
@@ -91,8 +93,8 @@ function getCities(event) {
             selectedItems.push(itemId)
 
         }
-          
-        console.log(selectedItems)
+       
+        console.log('selectedItems: ', selectedItems)
           // atualizar o campo escondido com os ítens selecionados
         collectedItems.value = selectedItems
     }
